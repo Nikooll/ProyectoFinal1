@@ -1,6 +1,6 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0" version="24.7.17">
   <diagram name="Página-1" id="qgbyo0LHozqXhU5egsmb">
-    <mxGraphModel dx="892" dy="350" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
+    <mxGraphModel dx="991" dy="389" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="3300" pageHeight="2339" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -17,7 +17,7 @@
           <mxGeometry y="128" width="170" height="172" as="geometry" />
         </mxCell>
         <mxCell id="dng5E_FOOvmkLoRbdMSq-10" value="Receta" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="430" y="190" width="160" height="240" as="geometry" />
+          <mxGeometry x="360" y="120" width="160" height="240" as="geometry" />
         </mxCell>
         <mxCell id="dng5E_FOOvmkLoRbdMSq-11" value="&lt;p data-pm-slice=&quot;1 1 []&quot;&gt; - texto: String &lt;br&gt;&lt;/p&gt;&lt;p&gt;- descripcion: String &lt;/p&gt;&lt;p&gt;- contraseña: String     &lt;/p&gt;&lt;p&gt;- pasos: String &lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dng5E_FOOvmkLoRbdMSq-10">
           <mxGeometry y="26" width="160" height="114" as="geometry" />
@@ -29,10 +29,49 @@
           <mxGeometry y="148" width="160" height="92" as="geometry" />
         </mxCell>
         <mxCell id="dng5E_FOOvmkLoRbdMSq-14" value="&lt;b&gt;Comentario&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="670" y="270" width="140" height="120" as="geometry" />
+          <mxGeometry x="330" y="420" width="140" height="120" as="geometry" />
         </mxCell>
         <mxCell id="dng5E_FOOvmkLoRbdMSq-17" value="&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;- texto: String &lt;/p&gt;&lt;p&gt;- fecha: Date  &lt;/p&gt;&lt;p&gt;+ comentar():  void&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dng5E_FOOvmkLoRbdMSq-14">
           <mxGeometry y="26" width="140" height="94" as="geometry" />
+        </mxCell>
+        <mxCell id="dng5E_FOOvmkLoRbdMSq-18" value="&lt;b&gt;Favorito&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="170" width="160" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="dng5E_FOOvmkLoRbdMSq-19" value="&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;- fecha: Date   &lt;/p&gt;&lt;p&gt;- usuario: Usuario&lt;/p&gt;&lt;p&gt;- receta: Receta &lt;br&gt;&lt;/p&gt;&lt;p&gt;+ registrar(): void&lt;/p&gt;&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;+ agregarAFavorito(): void&lt;/p&gt;&lt;p&gt;&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dng5E_FOOvmkLoRbdMSq-18">
+          <mxGeometry y="26" width="160" height="154" as="geometry" />
+        </mxCell>
+        <mxCell id="dng5E_FOOvmkLoRbdMSq-22" value="&lt;b&gt;Publicacion&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="405" width="140" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dng5E_FOOvmkLoRbdMSq-25" value="&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;- fecha: Date   &lt;/p&gt;&lt;p&gt;- contenido: String &lt;/p&gt;&lt;p&gt;- receta: Receta  &lt;/p&gt;&lt;p&gt;- usuario: Usuario|&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dng5E_FOOvmkLoRbdMSq-22">
+          <mxGeometry y="26" width="140" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="dng5E_FOOvmkLoRbdMSq-26" value="&lt;b&gt;Cuenta&lt;/b&gt;" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=none;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="680" width="130" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="dng5E_FOOvmkLoRbdMSq-29" value="&lt;p data-pm-slice=&quot;1 1 []&quot;&gt;- tipo: String &lt;/p&gt;&lt;p&gt;- estado: String&lt;/p&gt;&lt;p&gt;+ activar(): void &lt;/p&gt;&lt;p&gt;+ desactivar(): void&lt;/p&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="dng5E_FOOvmkLoRbdMSq-26">
+          <mxGeometry y="26" width="130" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="dng5E_FOOvmkLoRbdMSq-31" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.553;exitY=-0.01;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="dng5E_FOOvmkLoRbdMSq-6" target="dng5E_FOOvmkLoRbdMSq-11">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="320" y="260" as="sourcePoint" />
+            <mxPoint x="480" y="260" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="204" y="200" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dng5E_FOOvmkLoRbdMSq-32" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.634;entryY=1.022;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="dng5E_FOOvmkLoRbdMSq-19">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="721" y="400" as="sourcePoint" />
+            <mxPoint x="710" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="dng5E_FOOvmkLoRbdMSq-33" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.393;entryY=1.012;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="dng5E_FOOvmkLoRbdMSq-26" target="dng5E_FOOvmkLoRbdMSq-9">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="460" y="540" as="sourcePoint" />
+            <mxPoint x="620" y="540" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
